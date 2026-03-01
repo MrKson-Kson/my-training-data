@@ -3489,9 +3489,9 @@ def main():
     parser.add_argument("--intervals-key", help="Intervals.icu API key")
     parser.add_argument("--github-token", help="GitHub Personal Access Token")
     parser.add_argument("--github-repo", help="GitHub repo (format: username/repo)")
-    parser.add_argument("--days", type=int, default=7, help="Days of data to export (default: 7)")
+    parser.add_argument("--days", type=int, default=30, help="Days of data to export (default: 7)")
     parser.add_argument("--output", help="Save to local file instead of GitHub")
-    parser.add_argument("--anonymize", action="store_true", default=True, help="Remove identifying information (default: enabled)")
+    parser.add_argument("--anonymize", action="store_true", default=False, help="Remove identifying information (default: enabled)")
     parser.add_argument("--debug", action="store_true", help="Show debug output for API fields")
     parser.add_argument("--generate-history", action="store_true", help="Force generate history.json (pulls up to 3 years)")
     
